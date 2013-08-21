@@ -12,3 +12,5 @@ ant = new Ant()
 ### Code to be written by the using program ###
 ant.stick = new GarminStick3()
 ant.stick.open()
+ant.stick.on 'read', (data)=>
+  console.log data
