@@ -4,9 +4,11 @@
 # @codekit-prepend "_Constants.coffee"
 # @codekit-prepend "_Ant.coffee"
 # @codekit-prepend "_Driver.coffee"
+# @codekit-prepend "_Stick.coffee"
+
 
 ant = new Ant()
 
 ### Code to be written by the using program ###
-ant.selectStick('Garmin3')
+ant.stick = new GarminStick3()
 ant.stick.open()
