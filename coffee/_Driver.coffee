@@ -1,25 +1,8 @@
 usb = require('usb')
-EventEmitter = require('events').EventEmitter
 
-class Driver extends EventEmitter
+class Driver extends Constants
   constructor:()->
     usb.setDebugLevel(0)
-    @rawStart = [
-      'A4014A00EF',
-      'A4024D0054BF',
-      'A4094600B9A521FBBD72C34564',
-      'A40342000000E5',
-      'A4055100624D7901A7',
-      'A4024400FF1D',
-      'A4034300961F6D',
-      'A402450039DA',
-      'A4014B00EE'
-      ]
-    @rawStop = [
-      'A4014C00E9',
-      'A4014100E4',
-      'A4014A00EF'
-      ]
   open:()=>
     console.log 'This driver does not the open command'
     
