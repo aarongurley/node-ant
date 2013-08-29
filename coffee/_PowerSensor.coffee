@@ -7,6 +7,7 @@ class PowerSensor extends Sensor
     super(channel, 'receive', deviceID, 11, 5, 255, 8182, 57)
   
   handleDataDecode:(data)=>
+    
     if data.readUInt8(1) >= 8 && data.readUInt8(2) == @MESSAGE_CHANNEL_BROADCAST_DATA
       
       switch data.readUInt8(4)
