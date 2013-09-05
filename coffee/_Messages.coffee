@@ -41,7 +41,7 @@ class Messages extends Constants
   setDevice:(channel=0, deviceID=0, deviceType=0, transmissionType=0)=>
     payload = []
     payload = payload.concat(@intToLEHexArray(channel))
-    payload = payload.concat(@intToLEHexArray(deviceID))
+    payload = payload.concat(@intToLEHexArray(deviceID, 2))
     payload = payload.concat(@intToLEHexArray(deviceType))
     payload = payload.concat(@intToLEHexArray(transmissionType))
     return @buildMessage payload, @MESSAGE_CHANNEL_ID
@@ -102,20 +102,22 @@ class Messages extends Constants
     m.push @getChecksum(m)
     return new Buffer(m)
   
-  intToLEHexArray:(int)=>
+  intToLEHexArray:(int, numBytes)=>
+    numBytes = (if typeof (numBytes) is "undefined" or numBytes is null then numBytes = 1 else numBytes)
     a = []
     #b = new Buffer(int.toString(16), 'hex')
-    b = new Buffer(@decimalToHex(int), 'hex')
+    b = new Buffer(@decimalToHex(int, numBytes * 2), 'hex')
     i = b.length - 1
     while i >= 0
       a.push b[i]
       i--
     return a
     
-  decimalToHex:(d, padding)=>
+  decimalToHex:(d, numDigits)=>
     hex = Number(d).toString(16)
-    padding = (if typeof (padding) is "undefined" or padding is null then padding = 2 else padding)
-    hex = "0" + hex  while hex.length < padding
+    numDigits = (if typeof (numDigits) is "undefined" or numDigits is null then numDigits = 2 else numDigits)
+    hex = "0" + hex  while hex.length < numDigits
+    console.log hex
     return hex
   
   getChecksum:(message)=>
