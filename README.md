@@ -27,12 +27,12 @@ npm install node-ant
 
 Documentation
 -------------
-Currently there is very little documentation.  What isDocumentation will be created as the project is expanded upon.
+Currently there is very little documentation.  Documentation will be created as the project is expanded upon.
 
 
 License
 -------
-Released under the MIT/X11 license. See LICENSE for details.
+Released under the MIT/X11 license. See [LICENSE](./LICENSE.md) for details.
 
 
 Credits
