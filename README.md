@@ -12,7 +12,7 @@ This project was formed out of a need to communicate with ANT+ devices in real t
 
 Requirements
 -------
-Install libusb
+Install [libusb](http://www.libusb.org) either from a package manager or download an installer.
 
 ```
 brew install libusb
@@ -20,7 +20,9 @@ brew install libusb
 
 Install
 -------
+```
 npm install node-ant
+```
 
 
 Documentation
