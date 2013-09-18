@@ -32,7 +32,7 @@ Currently there is very little documentation.  Documentation will be created as 
 
 License
 -------
-Released under the MIT/X11 license. See [LICENSE](master/LICENSE.md) for details.
+Released under the MIT/X11 license. See LICENSE for details.
 
 
 Credits
