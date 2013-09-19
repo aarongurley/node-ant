@@ -18,6 +18,13 @@ Install [libusb](http://www.libusb.org) either from a package manager or downloa
 brew install libusb
 ```
 
+Install
+-------
+
+```
+npm install node-ant
+```
+
 
 Documentation
 -------------
