@@ -37,4 +37,4 @@ Released under the MIT/X11 license. See LICENSE for details.
 
 Credits
 -------
-Some snippets and inspiration was derived from the #python-ant library developed by @mvillalba.  This library served as a starting point as it serves a similar purpose.
+Some snippets and inspiration were derived from the #python-ant library developed by @mvillalba.  This library served as a starting point as it serves a similar purpose.
