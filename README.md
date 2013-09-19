@@ -18,16 +18,15 @@ Install [libusb](http://www.libusb.org) either from a package manager or downloa
 brew install libusb
 ```
 
-Install
--------
-```
-npm install node-ant
-```
-
 
 Documentation
 -------------
 Currently there is very little documentation.  Documentation will be created as the project is expanded upon.
+
+
+Examples
+-------------
+For a current example of how to use this module, see the example.js file.
 
 
 License
@@ -37,4 +36,4 @@ Released under the MIT/X11 license. See LICENSE for details.
 
 Credits
 -------
-Some snippets and inspiration were derived from the #python-ant library developed by @mvillalba.  This library served as a starting point as it serves a similar purpose.
+Some snippets and inspiration were derived from the #python-ant library developed by @mvillalba.  #python-ant served as a starting point as it serves a similar purpose.
