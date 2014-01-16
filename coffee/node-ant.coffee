@@ -12,16 +12,4 @@
 
 module.exports = new Ant();
 
-### This is sample code to run in a node seesion to test fore recieving instantaneous power ###
-# var Stick = require('./node-ant').GarminStick3
-# var Sensor = require('./node-ant').VectorSensor
-# 
-# var stick = new Stick();
-# stick.open();
-# 
-# var vector = new Sensor(stick);
-# vector.on('powerdata', function(data){ console.log(data.power.instantaneous); });
-# vector.attach(0, 05800);
-# 
-# vector.detachAll();
   
