@@ -117,7 +117,7 @@ class Messages extends Constants
     hex = Number(d).toString(16)
     numDigits = (if typeof (numDigits) is "undefined" or numDigits is null then numDigits = 2 else numDigits)
     hex = "0" + hex  while hex.length < numDigits
-    console.log hex
+    # console.log hex
     return hex
   
   getChecksum:(message)=>

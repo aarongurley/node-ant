@@ -43,7 +43,6 @@ class USB2Driver extends Driver
   
   write:(buffer)=>
     @outEndpoint.transfer(buffer, @writeCallback)
-    console.log('WRITE:', buffer)
     
   writeCallback:(error)=>
     console.log(error) if error
